@@ -19,8 +19,6 @@ static void destroy(GtkWidget *widget, GdkEvent *event, gpointer data){
 gboolean button_clicked (GtkWidget *widget, gpointer user_data){
     printf("Button clicked");
     g_print("\n");
-    //g_print("Butt pressed");
-    //gtk_label_set_text("shitfuck");
     struct labelMod* mod = user_data;
     mod->i += 1;
     printf("NUM: %d", mod->i);
